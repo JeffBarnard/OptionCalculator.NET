@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ef1f62bb-a79b-4b93-996f-437abeb8eed4": {
+      "ProjectGuid": "ef1f62bb-a79b-4b93-996f-437abeb8eed4",
+      "DisplayName": "OptionCalculator.Entity",
+      "ColorIndex": 0
+    },
+    "6562c06f-6540-4577-931c-09c546ee60bc": {
+      "ProjectGuid": "6562c06f-6540-4577-931c-09c546ee60bc",
+      "DisplayName": "OptionCalculator.Services.Provider",
+      "ColorIndex": 1
+    },
+    "c6d7a860-8d75-489f-8bb9-607b7a103c64": {
+      "ProjectGuid": "c6d7a860-8d75-489f-8bb9-607b7a103c64",
+      "DisplayName": "OptionCalculator.Services.JobScheduler",
+      "ColorIndex": 2
+    },
+    "80191021-bd79-4fe4-ba2d-01351a421170": {
+      "ProjectGuid": "80191021-bd79-4fe4-ba2d-01351a421170",
+      "DisplayName": "OptionCalculator.Service",
+      "ColorIndex": 3
+    },
+    "f74f1f06-bc58-41b7-8eff-eb673331d1f4": {
+      "ProjectGuid": "f74f1f06-bc58-41b7-8eff-eb673331d1f4",
+      "DisplayName": "OptionCalculator.Core",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 5
+}

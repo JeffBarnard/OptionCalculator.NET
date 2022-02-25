@@ -1,0 +1,46 @@
+select *--c.Symbol, max(d.TimeStamp)---Type, max(d.OpenInterest) 
+from
+	Contracts c
+	join Options o on o.contract = c.Id
+	join OptionData d on d.[option] = o.id
+
+where c.Symbol = 'AMZN'
+and [timestamp] > '2012-05-18 00:00:00.000'
+
+
+
+	 
+--group by Type
+
+
+select * 
+from
+	Contracts c
+	join Options o on o.contract = c.Id
+	join OptionData d on d.[option] = o.id
+group by
+where c.Symbol = 'SPY'
+
+
+
+select *
+from
+	Contracts co
+	left JOIN (
+	   SELECT MIN(CAST(c.Id AS BINARY(16))) as Id, c.Expiration, c.Symbol
+	   FROM Contracts c
+	   GROUP BY c.Expiration, c.Symbol
+	) as KeepRows ON
+	   co.Id = KeepRows.Id
+where
+	KeepRows.Id is null
+
+
+	
+	
+
+
+
+-- update optionData set [TimeStamp] = '2012-05-02 00:00:00.000' where [TimeStamp] = '2012-05-03 00:00:00.000'
+
+

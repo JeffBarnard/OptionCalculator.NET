@@ -1,0 +1,45 @@
+
+    ALTER TABLE [StockQuotes] DROP CONSTRAINT [FK_StockDataStock];
+GO
+
+    DROP TABLE [StockQuotes];
+GO
+
+-- Creating table 'StockQuotes'
+CREATE TABLE [StockQuotes] (
+    [Id] uniqueidentifier  NOT NULL,
+    [TimeStamp] datetime  NOT NULL,
+    [LastPrice] float  NOT NULL,
+    [Stock_Id] uniqueidentifier  NOT NULL
+);
+GO
+
+
+-- Creating primary key on [Id] in table 'StockQuotes'
+ALTER TABLE [StockQuotes]
+ADD CONSTRAINT [PK_StockQuotes]
+    PRIMARY KEY ([Id] );
+GO
+
+-- --------------------------------------------------
+-- Creating all FOREIGN KEY constraints
+-- --------------------------------------------------
+
+
+-- Creating foreign key on [Stock_Id] in table 'StockQuotes'
+ALTER TABLE [StockQuotes]
+ADD CONSTRAINT [FK_StockDataStock]
+    FOREIGN KEY ([Stock_Id])
+    REFERENCES [Stocks]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_StockDataStock'
+CREATE INDEX [IX_FK_StockDataStock]
+ON [StockQuotes]
+    ([Stock_Id]);
+GO
+
+-- --------------------------------------------------
+-- Script has ended
+-- --------------------------------------------------

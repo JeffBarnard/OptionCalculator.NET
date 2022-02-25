@@ -1,0 +1,29 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OptionCalculator.Services.JobScheduler.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TimeToWaitForShutdown" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">60000</Value>
+    </Setting>
+    <Setting Name="ForceDebugger" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ServiceName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OptionCalculator.Scheduler</Value>
+    </Setting>
+    <Setting Name="ServiceDisplayName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OptionCalculator Scheduler Service</Value>
+    </Setting>
+    <Setting Name="ServiceDescription" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OptionCalculator Scheduler Service</Value>
+    </Setting>
+    <Setting Name="Schedule" Type="System.Xml.XmlDocument" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfSchedule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Schedule xsi:type="DailySchedule" ProviderType="OptionCalculator.Service.dll, OptionCalculator.YahooService" Type="DAILY" FromTime="00:00" ToTime="23:58" DaysToRun="2 3 4 5 6" Name="DailySchedule" Active="true" StartTime="2011-08-09T16:30:00.000000-04:00" Interval="0"&gt;
+    &lt;InitializationData /&gt;
+  &lt;/Schedule&gt;
+&lt;/ArrayOfSchedule&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

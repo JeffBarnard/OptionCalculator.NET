@@ -1,0 +1,13 @@
+--select * 
+--from
+--	Contracts c
+--	join Options o on o.contract = c.Id
+--	join OptionData d on d.[option] = o.id
+
+select *
+from 
+	[Options] o
+	join 	
+	(select d.[option], d.strike
+	from OptionData d
+	group by d.[Option], d.strike) d on d.[option] = [Options].id

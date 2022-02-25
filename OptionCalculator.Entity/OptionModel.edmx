@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="OptionModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.3.5" ProviderManifestToken="3.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="OptionModelStoreContainer">
+    <EntitySet Name="OptionData" EntityType="OptionModel.Store.OptionData" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Options" EntityType="OptionModel.Store.Options" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Contracts" EntityType="OptionModel.Store.Contracts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ContractMonths" EntityType="OptionModel.Store.ContractMonths" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Stocks" EntityType="OptionModel.Store.Stocks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StockQuotes" EntityType="OptionModel.Store.StockQuotes" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="OptionDataOptionContracts" Association="OptionModel.Store.OptionDataOptionContracts">
+      <End Role="OptionData" EntitySet="OptionData" />
+      <End Role="OptionContracts" EntitySet="Options" />
+    </AssociationSet>
+    <AssociationSet Name="OptionContractsContract" Association="OptionModel.Store.OptionContractsContract">
+      <End Role="OptionContracts" EntitySet="Options" />
+      <End Role="Contract" EntitySet="Contracts" />
+    </AssociationSet>
+    <AssociationSet Name="StockDataStock" Association="OptionModel.Store.StockDataStock">
+      <End Role="StockData" EntitySet="StockQuotes" />
+      <End Role="Stock" EntitySet="Stocks" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="OptionData">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LastPrice" Type="decimal" Nullable="false" />
+    <Property Name="Change" Type="decimal" Nullable="false" />
+    <Property Name="Bid" Type="decimal" Nullable="false" />
+    <Property Name="Ask" Type="decimal" Nullable="false" />
+    <Property Name="Vol" Type="decimal" Nullable="false" />
+    <Property Name="OpenInterest" Type="decimal" Nullable="false" />
+    <Property Name="Option" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TimeStamp" Type="datetime" Nullable="false" />
+    <Property Name="Reference" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Options">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Contract" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Type" Type="nvarchar" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" />
+    <Property Name="Strike" Type="decimal" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Contracts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Expiration" Type="datetime" Nullable="false" />
+    <Property Name="Symbol" Type="nvarchar" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContractMonths">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Expiration" Type="datetime" Nullable="false" />
+    <Property Name="Symbol" Type="nvarchar" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Stocks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Symbol" Type="nvarchar" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StockQuotes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TimeStamp" Type="datetime" Nullable="false" />
+    <Property Name="LastPrice" Type="float" Nullable="false" />
+    <Property Name="Stock_Id" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <Association Name="OptionDataOptionContracts">
+    <End Role="OptionData" Type="OptionModel.Store.OptionData" Multiplicity="*" />
+    <End Role="OptionContracts" Type="OptionModel.Store.Options" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <ReferentialConstraint>
+      <Principal Role="OptionContracts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OptionData">
+        <PropertyRef Name="Option" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OptionContractsContract">
+    <End Role="OptionContracts" Type="OptionModel.Store.Options" Multiplicity="*" />
+    <End Role="Contract" Type="OptionModel.Store.Contracts" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <ReferentialConstraint>
+      <Principal Role="Contract">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OptionContracts">
+        <PropertyRef Name="Contract" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="StockDataStock">
+    <End Role="StockData" Type="OptionModel.Store.StockQuotes" Multiplicity="*" />
+    <End Role="Stock" Type="OptionModel.Store.Stocks" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Stock">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StockData">
+        <PropertyRef Name="Stock_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="OptionModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="OptionModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="OptionData" EntityType="OptionModel.OptionData" />
+          <EntitySet Name="Options" EntityType="OptionModel.Option" />
+          <EntitySet Name="Contracts" EntityType="OptionModel.Contract" />
+          <AssociationSet Name="OptionDataOptionContracts" Association="OptionModel.OptionDataOptionContracts">
+            <End Role="OptionData" EntitySet="OptionData" />
+            <End Role="OptionContracts" EntitySet="Options" />
+          </AssociationSet>
+          <AssociationSet Name="OptionContractsContract" Association="OptionModel.OptionContractsContract">
+            <End Role="OptionContracts" EntitySet="Options" />
+            <End Role="Contract" EntitySet="Contracts" />
+          </AssociationSet>
+          <EntitySet Name="ContractMonths" EntityType="OptionModel.ContractMonth" />
+          <EntitySet Name="Stocks" EntityType="OptionModel.Stock" />
+          <EntitySet Name="StockQuotes" EntityType="OptionModel.StockQuote" />
+          <AssociationSet Name="StockDataStock" Association="OptionModel.StockDataStock">
+            <End Role="StockData" EntitySet="StockQuotes" />
+            <End Role="Stock" EntitySet="Stocks" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="OptionData">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Guid" Name="id" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Type="Decimal" Name="LastPrice" Nullable="false" />
+          <Property Type="Decimal" Name="Change" Nullable="false" />
+          <Property Type="Decimal" Name="Bid" Nullable="false" />
+          <Property Type="Decimal" Name="Ask" Nullable="false" />
+          <Property Type="Decimal" Name="Vol" Nullable="false" />
+          <Property Type="Decimal" Name="OpenInterest" Nullable="false" />
+          <Property Type="Guid" Name="Option" Nullable="false" />
+          <Property Type="DateTime" Name="TimeStamp" Nullable="false" />
+          <Property Type="Boolean" Name="Reference" Nullable="false" />
+          <NavigationProperty Name="OptionNav" Relationship="OptionModel.OptionDataOptionContracts" FromRole="OptionData" ToRole="OptionContracts" />
+        </EntityType>
+        <EntityType Name="Option">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Guid" Name="id" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Type="Guid" Name="Contract" Nullable="false" />
+          <Property Type="String" Name="Type" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" />
+          <NavigationProperty Name="OptionData" Relationship="OptionModel.OptionDataOptionContracts" FromRole="OptionContracts" ToRole="OptionData" />
+          <NavigationProperty Name="ContractNav" Relationship="OptionModel.OptionContractsContract" FromRole="OptionContracts" ToRole="Contract" />
+          <Property Type="Decimal" Name="Strike" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Contract">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Guid" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Type="DateTime" Name="Expiration" Nullable="false" />
+          <Property Type="String" Name="Symbol" Nullable="false" />
+          <NavigationProperty Name="Options" Relationship="OptionModel.OptionContractsContract" FromRole="Contract" ToRole="OptionContracts" />
+        </EntityType>
+        <Association Name="OptionDataOptionContracts">
+          <End Type="OptionModel.OptionData" Role="OptionData" Multiplicity="*" >
+          </End>
+          <End Type="OptionModel.Option" Role="OptionContracts" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="OptionContracts">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="OptionData">
+              <PropertyRef Name="Option" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OptionContractsContract">
+          <End Type="OptionModel.Option" Role="OptionContracts" Multiplicity="*" >
+          </End>
+          <End Type="OptionModel.Contract" Role="Contract" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="Contract">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OptionContracts">
+              <PropertyRef Name="Contract" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ContractMonth">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Type="DateTime" Name="Expiration" Nullable="false" />
+          <Property Type="String" Name="Symbol" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Stock">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Guid" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Type="String" Name="Symbol" Nullable="false" />
+          <NavigationProperty Name="StockQuotes" Relationship="OptionModel.StockDataStock" FromRole="Stock" ToRole="StockData" />
+        </EntityType>
+        <EntityType Name="StockQuote">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Guid" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Type="DateTime" Name="TimeStamp" Nullable="false" />
+          <Property Type="Double" Name="LastPrice" Nullable="false" />
+          <NavigationProperty Name="Stock" Relationship="OptionModel.StockDataStock" FromRole="StockData" ToRole="Stock" />
+        </EntityType>
+        <Association Name="StockDataStock">
+          <End Type="OptionModel.StockQuote" Role="StockData" Multiplicity="*" />
+          <End Type="OptionModel.Stock" Role="Stock" Multiplicity="1" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OptionModelStoreContainer" CdmEntityContainer="OptionModelContainer">
+    <EntitySetMapping Name="OptionData">
+      <EntityTypeMapping TypeName="IsTypeOf(OptionModel.OptionData)">
+        <MappingFragment StoreEntitySet="OptionData">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="LastPrice" ColumnName="LastPrice" />
+          <ScalarProperty Name="Change" ColumnName="Change" />
+          <ScalarProperty Name="Bid" ColumnName="Bid" />
+          <ScalarProperty Name="Ask" ColumnName="Ask" />
+          <ScalarProperty Name="Vol" ColumnName="Vol" />
+          <ScalarProperty Name="OpenInterest" ColumnName="OpenInterest" />
+          <ScalarProperty Name="Option" ColumnName="Option" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Options">
+      <EntityTypeMapping TypeName="IsTypeOf(OptionModel.Option)">
+        <MappingFragment StoreEntitySet="Options">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Contract" ColumnName="Contract" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Strike" ColumnName="Strike" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contracts">
+      <EntityTypeMapping TypeName="IsTypeOf(OptionModel.Contract)">
+        <MappingFragment StoreEntitySet="Contracts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Expiration" ColumnName="Expiration" />
+          <ScalarProperty Name="Symbol" ColumnName="Symbol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractMonths">
+      <EntityTypeMapping TypeName="IsTypeOf(OptionModel.ContractMonth)">
+        <MappingFragment StoreEntitySet="ContractMonths">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Expiration" ColumnName="Expiration" />
+          <ScalarProperty Name="Symbol" ColumnName="Symbol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stocks">
+      <EntityTypeMapping TypeName="IsTypeOf(OptionModel.Stock)">
+        <MappingFragment StoreEntitySet="Stocks">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Symbol" ColumnName="Symbol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockQuotes">
+      <EntityTypeMapping TypeName="IsTypeOf(OptionModel.StockQuote)">
+        <MappingFragment StoreEntitySet="StockQuotes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="LastPrice" ColumnName="LastPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="StockDataStock" TypeName="OptionModel.StockDataStock" StoreEntitySet="StockQuotes">
+      <EndProperty Name="Stock">
+        <ScalarProperty Name="Id" ColumnName="Stock_Id" />
+      </EndProperty>
+      <EndProperty Name="StockData">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Default" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="OptionModel" DisplayType="true" >
+        <EntityTypeShape EntityType="OptionModel.OptionData" Width="1.5" PointX="1.25" PointY="0.625" Height="3.1340950520833317" />
+        <EntityTypeShape EntityType="OptionModel.Option" Width="1.625" PointX="3.875" PointY="1.125" Height="2.3648893229166656" IsExpanded="true" />
+        <EntityTypeShape EntityType="OptionModel.Contract" Width="1.5" PointX="7" PointY="0.5" Height="1.787985026041667" />
+        <AssociationConnector Association="OptionModel.OptionDataOptionContracts">
+          <ConnectorPoint PointX="2.75" PointY="2.3074446614583328" />
+          <ConnectorPoint PointX="3.875" PointY="2.3074446614583328" />
+        </AssociationConnector>
+        <AssociationConnector Association="OptionModel.OptionContractsContract">
+          <ConnectorPoint PointX="5.5" PointY="1.7064925130208337" />
+          <ConnectorPoint PointX="7" PointY="1.7064925130208337" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="OptionModel.ContractMonth" Width="1.5" PointX="9.125" PointY="0.5" Height="1.59568359375" />
+        <EntityTypeShape EntityType="OptionModel.Stock" Width="1.5" PointX="9" PointY="3.375" Height="1.5956835937499996" />
+        <EntityTypeShape EntityType="OptionModel.StockQuote" Width="1.5" PointX="6.625" PointY="3.25" Height="1.7879850260416665" />
+        <AssociationConnector Association="OptionModel.StockDataStock">
+          <ConnectorPoint PointX="8.125" PointY="4.172841796875" />
+          <ConnectorPoint PointX="9" PointY="4.172841796875" />
+        </AssociationConnector>
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

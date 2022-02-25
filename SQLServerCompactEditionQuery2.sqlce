@@ -1,0 +1,32 @@
+select *
+from
+	[Options] c
+	join Contracts oc on oc.id = c.contract
+	join [OptionData] d on d.[Option] = c.id
+where 
+	d.[TimeStamp] = '2012-10-19 00:00:00.000' 
+	and Symbol = 'AMZN'
+	--and Expiration = '2012-10-20 00:00:00.000'
+	--and (Expiration = '2012-07-21 00:00:00.000' or Expiration = '2012-06-28 00:00:00.000')
+order by c.Strike asc, d.[timestamp]
+
+-- delete older
+
+select *
+--delete
+from options o
+where o.contract in (select id from contracts c 
+					where c.Expiration < '2012-06-01 00:00:00.000')
+					
+update optionData
+set [TimeStamp] = '2012-11-02 00:00:00.000'
+where [TimeStamp] = '2012-11-03 00:00:00.000'
+
+select * from optiondata
+order by timestamp
+
+
+
+
+
+

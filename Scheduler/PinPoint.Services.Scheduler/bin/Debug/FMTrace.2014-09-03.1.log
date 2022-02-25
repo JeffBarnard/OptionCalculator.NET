@@ -1,0 +1,254 @@
+02/09/2014 11:43:04 AM	JobScheduler	Verbose		Executing Schedule : DailySchedule @ Tue, 02 Sep 2014 11:43:04 GMT. Type:OptionCalculator.Service.dll, OptionCalculator.YahooService
+02/09/2014 11:43:04 AM	JobScheduler	Verbose		----> Started: DailySchedule
+02/09/2014 11:43:04 AM	JobScheduler	Verbose		Setting Timer to wait for: 17215.9929138 seconds. Next Item up: DailySchedule @ Tue, 02 Sep 2014 16:30:00 GMT
+02/09/2014 11:43:04 AM	JobScheduler	Verbose		--------------------------------------
+02/09/2014 11:43:04 AM	JobScheduler	Information		YahooService Executed Started. Waiting for 15 seconds.
+02/09/2014 11:43:04 AM	JobScheduler	Verbose		Schedule: DailySchedule. Next Run: 02/09/2014 4:30:00 PM. Running: True Active:True 
+02/09/2014 11:43:04 AM	JobScheduler	Verbose		--------------------------------------
+02/09/2014 11:46:25 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: SPY
+02/09/2014 11:46:28 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: SPY
+02/09/2014 11:46:30 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: SPY and expiration: 2014-09
+02/09/2014 11:46:32 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: SPY and expiration: 2014-10
+02/09/2014 11:46:34 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: QQQ
+02/09/2014 11:46:34 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: QQQ
+02/09/2014 11:46:38 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: QQQ and expiration: 2014-09
+02/09/2014 11:46:43 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: QQQ and expiration: 2014-10
+02/09/2014 11:46:44 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: VXX
+02/09/2014 11:46:44 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: VXX
+02/09/2014 11:46:46 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: VXX and expiration: 2014-09
+02/09/2014 11:46:48 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: VXX and expiration: 2014-10
+02/09/2014 11:46:49 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: VXZ
+02/09/2014 11:46:49 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: VXZ
+02/09/2014 11:46:50 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: VXZ and expiration: 2014-09
+02/09/2014 11:46:50 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: VXZ and expiration: 2014-12
+02/09/2014 11:46:50 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: TIP
+02/09/2014 11:46:51 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: TIP
+02/09/2014 11:46:52 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: TIP and expiration: 2014-09
+02/09/2014 11:46:52 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: TIP and expiration: 2014-12
+02/09/2014 11:46:53 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: TLT
+02/09/2014 11:46:53 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: TLT
+02/09/2014 11:46:55 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: TLT and expiration: 2014-09
+02/09/2014 11:46:56 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: TLT and expiration: 2014-10
+02/09/2014 11:46:57 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: HYG
+02/09/2014 11:46:58 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: HYG
+02/09/2014 11:46:59 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: HYG and expiration: 2014-09
+02/09/2014 11:46:59 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: HYG and expiration: 2014-10
+02/09/2014 11:47:00 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: UUP
+02/09/2014 11:47:02 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: UUP
+02/09/2014 11:47:02 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: UUP and expiration: 2014-09
+02/09/2014 11:47:03 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: UUP and expiration: 2014-12
+02/09/2014 11:47:03 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: GLD
+02/09/2014 11:47:03 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: GLD
+02/09/2014 11:47:06 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GLD and expiration: 2014-09
+02/09/2014 11:47:09 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GLD and expiration: 2014-10
+02/09/2014 11:47:09 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: SLV
+02/09/2014 11:47:10 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: SLV
+02/09/2014 11:47:10 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: SLV and expiration: 2014-09
+02/09/2014 11:47:12 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: SLV and expiration: 2014-10
+02/09/2014 11:47:12 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: GDX
+02/09/2014 11:47:13 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: GDX
+02/09/2014 11:47:15 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GDX and expiration: 2014-09
+02/09/2014 11:47:16 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GDX and expiration: 2014-12
+02/09/2014 11:47:16 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: GDXJ
+02/09/2014 11:47:17 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: GDXJ
+02/09/2014 11:47:18 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GDXJ and expiration: 2014-09
+02/09/2014 11:47:19 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GDXJ and expiration: 2014-11
+02/09/2014 11:47:19 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: GG
+02/09/2014 11:47:20 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: GG
+02/09/2014 11:47:20 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GG and expiration: 2014-09
+02/09/2014 11:47:21 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GG and expiration: 2014-10
+02/09/2014 11:47:22 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: ABX
+02/09/2014 11:47:22 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: ABX
+02/09/2014 11:47:23 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: ABX and expiration: 2014-09
+02/09/2014 11:47:24 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: ABX and expiration: 2014-10
+02/09/2014 11:47:25 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: KGC
+02/09/2014 11:47:25 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: KGC
+02/09/2014 11:47:26 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: KGC and expiration: 2014-09
+02/09/2014 11:47:26 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: KGC and expiration: 2014-11
+02/09/2014 11:47:27 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: SLW
+02/09/2014 11:47:27 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: SLW
+02/09/2014 11:47:29 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: SLW and expiration: 2014-09
+02/09/2014 11:47:29 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: SLW and expiration: 2014-10
+02/09/2014 11:47:30 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: AMZN
+02/09/2014 11:47:30 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: AMZN
+02/09/2014 11:47:33 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: AMZN and expiration: 2014-09
+02/09/2014 11:47:35 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: AMZN and expiration: 2014-10
+02/09/2014 11:47:36 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: EGO
+02/09/2014 11:47:37 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: EGO
+02/09/2014 11:47:37 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: EGO and expiration: 2014-09
+02/09/2014 11:47:38 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: EGO and expiration: 2014-10
+02/09/2014 11:47:38 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: GOOG
+02/09/2014 11:47:38 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: GOOG
+02/09/2014 11:47:42 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GOOG and expiration: 2014-09
+02/09/2014 11:47:51 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GOOG and expiration: 2014-10
+02/09/2014 11:47:52 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: AAPL
+02/09/2014 11:47:52 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: AAPL
+02/09/2014 11:47:54 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: AAPL and expiration: 2014-09
+02/09/2014 11:47:57 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: AAPL and expiration: 2014-10
+02/09/2014 11:48:00 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: NFLX
+02/09/2014 11:48:01 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: NFLX
+02/09/2014 11:48:03 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: NFLX and expiration: 2014-09
+02/09/2014 11:48:06 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: NFLX and expiration: 2014-10
+02/09/2014 11:48:07 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: USO
+02/09/2014 11:48:08 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: USO
+02/09/2014 11:48:09 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: USO and expiration: 2014-09
+02/09/2014 11:48:10 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: USO and expiration: 2014-10
+02/09/2014 11:48:10 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: XLE
+02/09/2014 11:48:11 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: XLE
+02/09/2014 11:48:14 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: XLE and expiration: 2014-09
+02/09/2014 11:48:16 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: XLE and expiration: 2014-10
+02/09/2014 11:48:17 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: XLB
+02/09/2014 11:48:17 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: XLB
+02/09/2014 11:48:18 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: XLB and expiration: 2014-09
+02/09/2014 11:48:18 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: XLB and expiration: 2014-12
+02/09/2014 11:48:19 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: XLE
+02/09/2014 11:48:19 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: XLE
+02/09/2014 11:48:20 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: XLE and expiration: 2014-09
+02/09/2014 11:48:22 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: XLE and expiration: 2014-10
+02/09/2014 11:48:23 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: MS
+02/09/2014 11:48:23 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: MS
+02/09/2014 11:48:24 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: MS and expiration: 2014-09
+02/09/2014 11:48:25 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: MS and expiration: 2014-10
+02/09/2014 11:48:26 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: JPM
+02/09/2014 11:48:26 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: JPM
+02/09/2014 11:48:28 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: JPM and expiration: 2014-09
+02/09/2014 11:48:29 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: JPM and expiration: 2014-10
+02/09/2014 11:48:30 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: RY
+02/09/2014 11:48:30 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: RY
+02/09/2014 11:48:31 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: RY and expiration: 2014-09
+02/09/2014 11:48:31 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: RY and expiration: 2014-10
+02/09/2014 11:48:32 AM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: FB
+02/09/2014 11:48:32 AM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: FB
+02/09/2014 11:48:33 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: FB and expiration: 2014-09
+02/09/2014 11:48:35 AM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: FB and expiration: 2014-10
+02/09/2014 11:48:36 AM	JobScheduler	Information		YahooService finished.
+02/09/2014 11:48:36 AM	JobScheduler	Information		Finished Executing: DailySchedule.
+02/09/2014 4:29:59 PM	JobScheduler	Verbose		Executing Schedule : DailySchedule @ Tue, 02 Sep 2014 16:29:59 GMT. Type:OptionCalculator.Service.dll, OptionCalculator.YahooService
+02/09/2014 4:29:59 PM	JobScheduler	Verbose		----> Started: DailySchedule
+02/09/2014 4:29:59 PM	JobScheduler	Verbose		Setting Timer to wait for: 86400.3895793 seconds. Next Item up: DailySchedule @ Wed, 03 Sep 2014 16:30:00 GMT
+02/09/2014 4:29:59 PM	JobScheduler	Verbose		--------------------------------------
+02/09/2014 4:29:59 PM	JobScheduler	Verbose		Schedule: DailySchedule. Next Run: 03/09/2014 4:30:00 PM. Running: True Active:True 
+02/09/2014 4:29:59 PM	JobScheduler	Verbose		--------------------------------------
+02/09/2014 4:29:59 PM	JobScheduler	Information		YahooService Executed Started. Waiting for 15 seconds.
+02/09/2014 4:30:00 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: SPY
+02/09/2014 4:30:04 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: SPY
+02/09/2014 4:30:08 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: SPY and expiration: 2014-09
+02/09/2014 4:30:11 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: SPY and expiration: 2014-10
+02/09/2014 4:30:12 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: QQQ
+02/09/2014 4:30:12 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: QQQ
+02/09/2014 4:30:15 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: QQQ and expiration: 2014-09
+02/09/2014 4:30:17 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: QQQ and expiration: 2014-10
+02/09/2014 4:30:18 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: VXX
+02/09/2014 4:30:18 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: VXX
+02/09/2014 4:30:20 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: VXX and expiration: 2014-09
+02/09/2014 4:30:22 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: VXX and expiration: 2014-10
+02/09/2014 4:30:23 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: VXZ
+02/09/2014 4:30:23 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: VXZ
+02/09/2014 4:30:24 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: VXZ and expiration: 2014-09
+02/09/2014 4:30:24 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: VXZ and expiration: 2014-12
+02/09/2014 4:30:25 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: TIP
+02/09/2014 4:30:25 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: TIP
+02/09/2014 4:30:25 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: TIP and expiration: 2014-09
+02/09/2014 4:30:26 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: TIP and expiration: 2014-12
+02/09/2014 4:30:26 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: TLT
+02/09/2014 4:30:26 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: TLT
+02/09/2014 4:30:28 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: TLT and expiration: 2014-09
+02/09/2014 4:30:29 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: TLT and expiration: 2014-10
+02/09/2014 4:30:30 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: HYG
+02/09/2014 4:30:30 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: HYG
+02/09/2014 4:30:31 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: HYG and expiration: 2014-09
+02/09/2014 4:30:31 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: HYG and expiration: 2014-10
+02/09/2014 4:30:32 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: UUP
+02/09/2014 4:30:32 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: UUP
+02/09/2014 4:30:33 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: UUP and expiration: 2014-09
+02/09/2014 4:30:33 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: UUP and expiration: 2014-12
+02/09/2014 4:30:33 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: GLD
+02/09/2014 4:30:34 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: GLD
+02/09/2014 4:30:36 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GLD and expiration: 2014-09
+02/09/2014 4:30:39 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GLD and expiration: 2014-10
+02/09/2014 4:30:40 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: SLV
+02/09/2014 4:30:40 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: SLV
+02/09/2014 4:30:41 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: SLV and expiration: 2014-09
+02/09/2014 4:30:42 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: SLV and expiration: 2014-10
+02/09/2014 4:30:42 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: GDX
+02/09/2014 4:30:43 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: GDX
+02/09/2014 4:30:44 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GDX and expiration: 2014-09
+02/09/2014 4:30:44 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GDX and expiration: 2014-12
+02/09/2014 4:30:45 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: GDXJ
+02/09/2014 4:30:45 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: GDXJ
+02/09/2014 4:30:46 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GDXJ and expiration: 2014-09
+02/09/2014 4:30:47 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GDXJ and expiration: 2014-11
+02/09/2014 4:30:48 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: GG
+02/09/2014 4:30:48 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: GG
+02/09/2014 4:30:49 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GG and expiration: 2014-09
+02/09/2014 4:30:49 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GG and expiration: 2014-10
+02/09/2014 4:30:50 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: ABX
+02/09/2014 4:30:50 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: ABX
+02/09/2014 4:30:51 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: ABX and expiration: 2014-09
+02/09/2014 4:30:52 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: ABX and expiration: 2014-10
+02/09/2014 4:30:53 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: KGC
+02/09/2014 4:30:53 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: KGC
+02/09/2014 4:30:54 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: KGC and expiration: 2014-09
+02/09/2014 4:30:55 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: KGC and expiration: 2014-11
+02/09/2014 4:30:55 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: SLW
+02/09/2014 4:30:55 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: SLW
+02/09/2014 4:30:56 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: SLW and expiration: 2014-09
+02/09/2014 4:30:57 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: SLW and expiration: 2014-10
+02/09/2014 4:30:58 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: AMZN
+02/09/2014 4:30:58 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: AMZN
+02/09/2014 4:31:00 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: AMZN and expiration: 2014-09
+02/09/2014 4:31:02 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: AMZN and expiration: 2014-10
+02/09/2014 4:31:04 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: EGO
+02/09/2014 4:31:04 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: EGO
+02/09/2014 4:31:04 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: EGO and expiration: 2014-09
+02/09/2014 4:31:05 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: EGO and expiration: 2014-10
+02/09/2014 4:31:05 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: GOOG
+02/09/2014 4:31:05 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: GOOG
+02/09/2014 4:31:10 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GOOG and expiration: 2014-09
+02/09/2014 4:31:14 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: GOOG and expiration: 2014-10
+02/09/2014 4:31:15 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: AAPL
+02/09/2014 4:31:16 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: AAPL
+02/09/2014 4:31:18 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: AAPL and expiration: 2014-09
+02/09/2014 4:31:20 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: AAPL and expiration: 2014-10
+02/09/2014 4:31:23 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: NFLX
+02/09/2014 4:31:23 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: NFLX
+02/09/2014 4:31:25 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: NFLX and expiration: 2014-09
+02/09/2014 4:31:27 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: NFLX and expiration: 2014-10
+02/09/2014 4:31:28 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: USO
+02/09/2014 4:31:28 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: USO
+02/09/2014 4:31:29 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: USO and expiration: 2014-09
+02/09/2014 4:31:30 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: USO and expiration: 2014-10
+02/09/2014 4:31:31 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: XLE
+02/09/2014 4:31:31 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: XLE
+02/09/2014 4:31:33 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: XLE and expiration: 2014-09
+02/09/2014 4:31:35 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: XLE and expiration: 2014-10
+02/09/2014 4:31:35 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: XLB
+02/09/2014 4:31:35 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: XLB
+02/09/2014 4:31:36 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: XLB and expiration: 2014-09
+02/09/2014 4:31:37 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: XLB and expiration: 2014-12
+02/09/2014 4:31:37 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: XLE
+02/09/2014 4:31:37 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: XLE
+02/09/2014 4:31:39 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: XLE and expiration: 2014-09
+02/09/2014 4:31:41 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: XLE and expiration: 2014-10
+02/09/2014 4:31:42 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: MS
+02/09/2014 4:31:42 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: MS
+02/09/2014 4:31:43 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: MS and expiration: 2014-09
+02/09/2014 4:31:43 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: MS and expiration: 2014-10
+02/09/2014 4:31:43 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: JPM
+02/09/2014 4:31:44 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: JPM
+02/09/2014 4:31:45 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: JPM and expiration: 2014-09
+02/09/2014 4:31:46 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: JPM and expiration: 2014-10
+02/09/2014 4:31:47 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: RY
+02/09/2014 4:31:47 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: RY
+02/09/2014 4:31:49 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: RY and expiration: 2014-09
+02/09/2014 4:31:49 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: RY and expiration: 2014-10
+02/09/2014 4:31:50 PM	JobScheduler	Information		Getting stock symbol from yahoo.finance.quotes for symbol: FB
+02/09/2014 4:31:51 PM	JobScheduler	Information		Getting information from yahoo.finance.option_contracts for symbol: FB
+02/09/2014 4:31:53 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: FB and expiration: 2014-09
+02/09/2014 4:31:54 PM	JobScheduler	Information		Getting information from yahoo.finance.options for symbol: FB and expiration: 2014-10
+02/09/2014 4:31:55 PM	JobScheduler	Information		YahooService finished.
+02/09/2014 4:31:55 PM	JobScheduler	Information		Finished Executing: DailySchedule.
+03/09/2014 10:12:40 AM	JobScheduler	Information		Service Started at :03/09/2014 10:12:19 AM
+03/09/2014 10:12:40 AM	JobScheduler	Information		Attempting to Load Schedule
+03/09/2014 10:12:40 AM	JobScheduler	Verbose		Schedule Name:DailySchedule Type: DAILY Class To Run:OptionCalculator.Service.dll, OptionCalculator.YahooService
+03/09/2014 10:12:40 AM	JobScheduler	Verbose		Setting Timer to wait for: 22639.3329696 seconds. Next Item up: DailySchedule @ Wed, 03 Sep 2014 16:30:00 GMT

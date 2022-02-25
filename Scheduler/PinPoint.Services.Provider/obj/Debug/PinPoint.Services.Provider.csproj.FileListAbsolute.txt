@@ -1,0 +1,6 @@
+C:\dev\OptionCalculator\Scheduler\PinPoint.Services.Provider\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\OptionCalculator\Scheduler\PinPoint.Services.Provider\bin\Debug\PinPoint.Services.Provider.dll
+C:\dev\OptionCalculator\Scheduler\PinPoint.Services.Provider\bin\Debug\PinPoint.Services.Provider.pdb
+C:\dev\OptionCalculator\Scheduler\PinPoint.Services.Provider\bin\Debug\PinPoint.Unity.Interfaces.dll
+C:\dev\OptionCalculator\Scheduler\PinPoint.Services.Provider\obj\Debug\PinPoint.Services.Provider.dll
+C:\dev\OptionCalculator\Scheduler\PinPoint.Services.Provider\obj\Debug\PinPoint.Services.Provider.pdb

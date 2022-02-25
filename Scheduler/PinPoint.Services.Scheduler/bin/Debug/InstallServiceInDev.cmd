@@ -1,0 +1,1 @@
+%systemroot%\Microsoft.NET\Framework\v4.0.30319\InstallUtil /servicename="OptionCalculator.Services.Scheduler" /description="OptionCalculator Scheduler Environment" /displayname="OptionCalculator Scheduler Service" /f  OptionCalculator.Services.JobScheduler.exe
